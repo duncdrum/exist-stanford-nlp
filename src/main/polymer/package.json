@@ -27,7 +27,7 @@
     "@polymer/paper-tabs": "^3.1.0",
     "@polymer/polymer": "^3.4.0",
     "@webcomponents/webcomponentsjs": "^2.4.3",
-    "jsoneditor": "^8.6.6"
+    "jsoneditor": "^9.3.0"
   },
   "devDependencies": {
     "polymer-cli": "^1.9.11",
