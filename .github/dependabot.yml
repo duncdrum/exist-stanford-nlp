@@ -1,0 +1,87 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: edu.stanford.nlp:stanford-corenlp:models-english-kbp
+    versions:
+    - 4.2.0
+    - 4.2.0
+  - dependency-name: edu.stanford.nlp:stanford-corenlp:models-english
+    versions:
+    - 4.2.0
+    - 4.2.0
+  - dependency-name: edu.stanford.nlp:stanford-corenlp:models
+    versions:
+    - 4.2.0
+  - dependency-name: edu.stanford.nlp:stanford-corenlp:sources
+    versions:
+    - 4.2.0
+  - dependency-name: edu.stanford.nlp:stanford-corenlp:javadoc
+    versions:
+    - 4.2.0
+  - dependency-name: edu.stanford.nlp:stanford-corenlp
+    versions:
+    - 4.2.0
+    - 4.2.0
+  - dependency-name: org.xmlunit:xmlunit-core
+    versions:
+    - 2.8.2
+  - dependency-name: org.exist-db:exist-apps-parent
+    versions:
+    - 1.10.0
+  - dependency-name: org.apache.maven.plugins:maven-resources-plugin
+    versions:
+    - 3.2.0
+  - dependency-name: ro.kuberam.maven.plugins:kuberam-expath-plugin
+    versions:
+    - 0.6.3
+- package-ecosystem: npm
+  directory: "/src/main/polymer"
+  schedule:
+    interval: daily
+    time: "04:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jsoneditor
+    versions:
+    - 9.3.0
+    - 9.3.1
+    - 9.4.0
+  - dependency-name: ansi-styles
+    versions:
+    - 6.0.0
+  - dependency-name: urijs
+    versions:
+    - 1.19.6
+  - dependency-name: node-fetch
+    versions:
+    - 2.6.1
+  - dependency-name: https-proxy-agent
+    versions:
+    - 2.2.4
+  - dependency-name: http-proxy
+    versions:
+    - 1.18.1
+  - dependency-name: socket.io
+    versions:
+    - 2.4.1
+  - dependency-name: lodash.template
+    versions:
+    - 4.5.0
+  - dependency-name: ini
+    versions:
+    - 1.3.8
+  - dependency-name: "@webcomponents/webcomponentsjs"
+    versions:
+    - 2.5.0
+  - dependency-name: bl
+    versions:
+    - 1.2.3
+  - dependency-name: "@polymer/polymer"
+    versions:
+    - 3.4.1
